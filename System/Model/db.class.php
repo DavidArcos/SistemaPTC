@@ -9,6 +9,18 @@
         }
       }
 
+      public function consulta($sql){
+        $resultado = mysql_query($sql,$this->conexion);
+        if(!$resultado){
+          echo 'MySQL Error: ' . mysql_error();
+          exit;
+        }
+        return $resultado;
+      }
+
+      public function update($sql){
+      }
+
      /* close conection with db */
      public function disconnect(){
        mysql_close();

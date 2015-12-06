@@ -34,7 +34,8 @@
 
     //Insertar PTC
     function insertarPTC(){
-      
+      this.conectar();
+      $query =
     }
 
     //Consultar la bd
